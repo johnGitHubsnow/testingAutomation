@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.734">
+    <testcase classname="End to end flow of Ideathon application" name="To validate user view of Ideathon webapplication" time="12.482">
+        <failure message="unknown error: cannot determine loading status&#10;from disconnected: unable to send message to renderer&#10;  (Session info: chrome=100.0.4896.75)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'DIN80015990', ip: '10.142.0.248', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [17f1687ad92c3d20f88ffd46c3446e7d, get {url=https://10.24.161.103:9090/APACWorld/#/}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\VREDDYK\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61444/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 17f1687ad92c3d20f88ffd46c3446e7d" type="org.openqa.selenium.WebDriverException"><![CDATA[Given Url is opened.........................................................failed
+When User is in login page and enter valid credintials "peravika" "Welcome@98".skipped
+And Click on Signin button..................................................skipped
+Then User is able to signin successfully and view wrapper page..............skipped
+Then Check whether user is able to view all the titles......................skipped
+And Click on the Ideathon title in wrapper page.............................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
+from disconnected: unable to send message to renderer
+  (Session info: chrome=100.0.4896.75)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'DIN80015990', ip: '10.142.0.248', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [17f1687ad92c3d20f88ffd46c3446e7d, get {url=https://10.24.161.103:9090/APACWorld/#/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 100.0.4896.75, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\VREDDYK\AppData\Lo...}, goog:chromeOptions: {debuggerAddress: localhost:61444}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61444/devtoo..., se:cdpVersion: 100.0.4896.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 17f1687ad92c3d20f88ffd46c3446e7d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:327)
+	at webdriver.implementation.CommonDriver.navigateToUrl(CommonDriver.java:53)
+	at StepDefinition.EndToEnd.url_is_opened(EndToEnd.java:51)
+	at ✽.Url is opened(file:///C:/Users/VREDDYK/.eclipse/Ideathon1/src/test/resourses/features/endToEnd.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>
